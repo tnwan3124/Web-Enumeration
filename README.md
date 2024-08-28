@@ -1,4 +1,12 @@
 # Web Enumeration
+## Tóm tắt Công cụ Kiểm tra Web
+
+| Công cụ | Mục đích | Cờ/Tùy chọn Quan trọng | Ví dụ Sử dụng |
+|---|---|---|---|
+| [**Gobuster**](#gobuster) | Tìm kiếm thư mục và tệp ẩn trên máy chủ web | `-u` (URL), `-w` (wordlist), `-t` (số luồng), `-x` (phần mở rộng tệp) | `gobuster dir -u http://example.com -w common.txt` |
+| [**WPScan**](#wpscan) | Quét và kiểm tra các lỗ hổng trong trang web WordPress | `--url`, `--enumerate` (p: plugin, t: theme, u: user), `--passwords`, `--usernames` | `wpscan --url http://wordpress.com --enumerate u` |
+| [**Nikto**](#nikto) | Quét máy chủ web để tìm các lỗ hổng và cấu hình sai | `-h` (host), `-p` (port), `-Tuning` (tùy chỉnh loại lỗ hổng), `-Plugins` | `nikto -h example.com -Tuning 2` (tìm kiếm tệp cấu hình sai) |
+
 ## Manual Enumeration
 Các trình duyệt hiện đại bao gồm Chrome và Firefox có một bộ công cụ nằm trong "Công cụ dành cho nhà phát triển/Bảng điều khiển". Chúng ta sẽ thảo luận về Firefox, tuy nhiên, Chrome có một bộ công cụ rất tương tự. Bộ công cụ này bao gồm một loạt các công cụ bao gồm:
 
